@@ -59,4 +59,4 @@ VOLUME ["/config", "/downloads"]
 ENV HOME /config
 
 # Setting start CMD
-CMD ["/usr/bin/python", "/opt/sabnzbd/SABnzbd.py", "-f", "/config/sabnzbd.ini"]
+CMD ["/usr/bin/python", "/opt/sabnzbd/SABnzbd.py", "-f", "/config/sabnzbd.ini", "-s", "0.0.0.0:8080"]
