@@ -44,7 +44,6 @@ RUN apk del gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev
 RUN rm -rf /var/cache/apk/*
 RUN rm -rf /root/par2cmdline
 RUN rm /root/pip.py
-RUN rm -rf /root/yenc
 RUN rm /root/yenc-0.3.tar.gz
 RUN rm -rf /root/yenc-0.3
 
