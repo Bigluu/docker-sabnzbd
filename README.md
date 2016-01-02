@@ -14,4 +14,4 @@ docker run -d \
   -v /configs/sabnzbd:/config \
   -v /mnt/downloads:/downloads \
   --name=sabnzbd -p 8080:8080 bahaika/sabnzbd
-````
+```
