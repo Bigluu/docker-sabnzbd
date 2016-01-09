@@ -1,7 +1,7 @@
 
 ### SABNZBd
 
-![Sabnzbd logo](http://sabnzbd.org/resources/landing/sabnzbd_logo.png)
+![Sabnzbd logo](https://raw.githubusercontent.com/HipsterWhale/docker-sabnzbd/master/logo.png)
 
 #### What is it ?
 The aim of this Dockerfile is to create a basic image of a completly running and updated sabnzbd under an alpine.
