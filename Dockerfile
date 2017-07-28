@@ -8,7 +8,7 @@ LABEL io.k8s.description="Sabnzbd" \
 ## Maintainer info
 MAINTAINER Nicolas Bigler <https://github.com/Bigluu>
 # Installing software to compile
-RUN apk add --update gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev curl\
+RUN apk add --update gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev libgomp curl\
   && git clone https://github.com/Parchive/par2cmdline /root/par2cmdline \
   && cd /root/par2cmdline \
   && aclocal \
