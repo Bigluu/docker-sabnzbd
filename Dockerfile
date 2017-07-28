@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.6
 MAINTAINER Jérémy SEBAN <jeremy@seban.eu>
 
 # Installing software to compile
