@@ -1,6 +1,12 @@
 FROM alpine:3.6
-MAINTAINER Jérémy SEBAN <jeremy@seban.eu>
 
+LABEL io.k8s.description="Sabnzbd" \
+      io.k8s.display-name="Sabzbd" \
+      io.openshift.expose-services="8080" \
+      io.openshift.tags="sabnzbd"
+
+## Maintainer info
+MAINTAINER Nicolas Bigler <https://github.com/Bigluu>
 # Installing software to compile
 RUN apk add --update gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev curl\
   && git clone https://github.com/Parchive/par2cmdline /root/par2cmdline \
