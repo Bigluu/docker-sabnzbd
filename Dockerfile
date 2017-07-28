@@ -2,7 +2,7 @@ FROM alpine:3.6
 MAINTAINER Jérémy SEBAN <jeremy@seban.eu>
 
 # Installing software to compile
-RUN apk add --update gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev \
+RUN apk add --update gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev curl\
   && git clone https://github.com/Parchive/par2cmdline /root/par2cmdline \
   && cd /root/par2cmdline \
   && aclocal \
