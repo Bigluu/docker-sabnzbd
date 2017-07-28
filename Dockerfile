@@ -25,20 +25,14 @@ RUN apk add --update gcc autoconf automake git g++ make python-dev openssl-dev l
   && pip install configobj \
   && pip install feedparser \
   && pip install pyOpenSSL \
-  && curl http://www.golug.it/pub/yenc/yenc-0.3.tar.gz > /root/yenc-0.3.tar.gz \
-  && tar -xvzf yenc-0.3.tar.gz \
-  && cd /root/yenc-0.3 \
-  && python setup.py build \
-  && python setup.py install \
+  && pip install sabyenc \
   && mkdir /opt && cd /opt \
   && git clone -b master https://github.com/sabnzbd/sabnzbd sabnzbd \
   && cd /opt/sabnzbd \
   && apk del gcc autoconf automake git g++ make python-dev openssl-dev libffi-dev \
   && rm -rf /var/cache/apk/* \
   && rm -rf /root/par2cmdline \
-  && rm /root/pip.py \
-  && rm /root/yenc-0.3.tar.gz \
-  && rm -rf /root/yenc-0.3
+  && rm /root/pip.py
 
 # Exposing sabnzbd web ui
 EXPOSE 8080
